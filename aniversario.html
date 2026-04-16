@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Amor ❤️</title>
+    <style>
+        :root {
+            --rojo-oscuro: #7b0d0d;
+            --rojo-vivo: #c1121f;
+            --beige-papel: #fdf0d5;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--rojo-oscuro);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 450px;
+            perspective: 1000px;
+        }
+
+        .hidden { display: none; }
+
+        /* Pantalla Inicial: El Sobre */
+        #step1 {
+            text-align: center;
+            cursor: pointer;
+            animation: fadeIn 1.5s;
+        }
+
+        .envelope {
+            width: 180px;
+            height: 120px;
+            background: #d4a373;
+            margin: 0 auto 20px;
+            position: relative;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .envelope::before {
+            content: "";
+            position: absolute;
+            top: -60px; left: 0;
+            border-left: 90px solid transparent;
+            border-right: 90px solid transparent;
+            border-bottom: 60px solid #bc8a5f;
+        }
+
+        .heart-seal {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* Pantalla de la Carta */
+        .card {
+            background: var(--beige-papel);
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            max-height: 80vh;
+            overflow-y: auto;
+            line-height: 1.6;
+            text-align: justify;
+            animation: slideIn 1s ease-out;
+            border-left: 15px solid #e0d1b3;
+        }
+
+        .card h2 {
+            text-align: center;
+            color: var(--rojo-vivo);
+            font-style: italic;
+        }
+
+        .letter-content {
+            white-space: pre-line; /* Mantiene los espacios de tu carta */
+            font-size: 0.95rem;
+        }
+
+        /* El Corazón con el 16 */
+        .anniversary-icon {
+            text-align: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .big-heart {
+            font-size: 80px;
+            color: var(--rojo-vivo);
+            display: inline-block;
+        }
+
+        .number-16 {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: bold;
+            font-size: 22px;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background: var(--rojo-vivo);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* Animaciones */
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: rotateX(-30deg) translateY(50px); }
+            to { opacity: 1; transform: rotateX(0deg) translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="step1" onclick="showLetter()">
+            <div class="envelope">
+                <div class="heart-seal">❤️</div>
+            </div>
+            <h2 style="color: white; font-family: sans-serif;">Para Rissel...</h2>
+            <p style="color: #f1f1f1;">Toca para abrir</p>
+        </div>
+
+        <div id="step2" class="card hidden">
+            <h2>Amor mío...</h2>
+            
+            <div class="letter-content">
+                Hoy cumplimos 1 año y 4 meses juntos… y de verdad, si me pongo a pensar todo lo que hemos vivido, siento que es muchísimo más tiempo, pero en el mejor sentido. O sea, contigo el tiempo pasa volando, pero a la vez cada momento se siente tan intenso y especial que parece que hemos vivido mil cosas juntos.
+
+                Desde el primer día que empezamos a hablar, nunca imaginé que ibas a convertirte en alguien tan importante para mí. Y míranos ahora… aquí seguimos, creciendo juntos, aguantándonos en nuestros días buenos y en los no tan buenos, riéndonos por tonterías, haciendo planes, soñando cosas juntos… y eso, para mí, vale demasiado.
+
+                Me encanta cómo eres conmigo. Me encanta tu forma de hablar, de reírte, de hacerme sentir tranquilo, de hacerme sentir querido incluso cuando yo mismo estoy medio perdido. Contigo siento que puedo ser yo sin filtro, sin miedo, sin aparentar nada. Y eso no es fácil de encontrar.
+
+                Gracias por cada momento que me has regalado, por cada palabra bonita, por cada abrazo (aunque sea en mi mente cuando no estás cerca), por cada detalle que tienes conmigo. A veces no lo digo tanto como debería, pero valoro demasiado todo lo que haces por mí.
+
+                También quiero que sepas que no todo ha sido perfecto, pero eso es lo bonito… que a pesar de todo, aquí seguimos. Hemos sabido seguir adelante, entendernos, mejorar, y eso demuestra lo fuerte que es lo nuestro. Porque lo nuestro no es algo cualquiera, es algo real.
+
+                Me haces feliz de una forma que no sabía que necesitaba. Eres mi calma cuando todo está mal, pero también eres mi emoción cuando todo está bien. Eres ese lugar al que siempre quiero volver.
+
+                Y sí, a veces soy terco, a veces me equivoco, a veces no sé cómo decir lo que siento… pero lo que nunca cambia es lo mucho que te amo. De verdad, te amo tal y como eres, con todo, sin cambiarte nada.
+
+                Quiero seguir sumando meses contigo, años, lo que venga… quiero seguir viviendo experiencias a tu lado, seguir creciendo juntos, seguir construyendo algo bonito. Porque si es contigo, yo voy a donde sea.
+
+                Feliz 1 año y 4 meses, mi amor.
+                Gracias por existir, por llegar a mi vida y por quedarte.
+
+                Te amo muchísimo.
+            </div>
+
+            <div class="anniversary-icon">
+                <div class="big-heart">❤️</div>
+                <div class="number-16">16</div>
+            </div>
+
+            <button onclick="window.location.reload()">Ver de nuevo</button>
+        </div>
+    </div>
+
+    <script>
+        function showLetter() {
+            document.getElementById('step1').classList.add('hidden');
+            document.getElementById('step2').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
